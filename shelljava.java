@@ -20,7 +20,8 @@ public class shelljava
             comd[1]="git add .";
             comd[2]="git commit -m \""+commit+"\"";
             comd[3]="git remote add origin "+url;
-            comd[4]="git push -f origin master";
+            comd[4]="git push -u origin master";
+            //comd[4]="git push -f origin master"; // Sometimes harmful to execute without user prompt
             for(int i=0;i<5;i++)
             {
                 String cmd=comd[i];
@@ -31,6 +32,7 @@ public class shelljava
                 String line = "";
                 while ((line=buf.readLine())!=null) {
                     System.out.println(line);
+                    //Error handling and force push prompts has to be handled
                 }
             }
             System.out.println("Uploaded on github..");
