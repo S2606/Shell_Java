@@ -20,9 +20,8 @@ public class shelljava
             comd[1]="git add .";
             comd[2]="git commit -m \""+commit+"\"";
             comd[3]="git remote add origin "+url;
-            comd[4]="git pull";
-            comd[5]="git push -f origin master";
-            for(int i=0;i<4;i++)
+            comd[4]="git push -f origin master";
+            for(int i=0;i<5;i++)
             {
                 String cmd=comd[i];
                 Runtime run = Runtime.getRuntime();
