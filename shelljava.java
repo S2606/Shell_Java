@@ -18,7 +18,7 @@ public class shelljava
             String comd[]=new String[6];
             comd[0]="git init";
             comd[1]="git add .";
-            comd[2]="git commit -m "+commit;
+            comd[2]="git commit -m \""+commit+"\"";
             comd[3]="git remote add origin "+url;
             comd[4]="git pull";
             comd[5]="git push -f origin master";
