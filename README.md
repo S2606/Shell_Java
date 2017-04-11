@@ -3,7 +3,7 @@ Just download the shelljava.jar file
 
 and use this command to run it
 
-			java -jar Shell_Java.jar 
+    java -jar Shell_Java.jar 
 			
 
 Open to contribution.
